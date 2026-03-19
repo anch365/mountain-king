@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Logo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="flex flex-col">
+    <!-- l'entête -->
+    <header
+      id="home"
+      class="flex flex-col bg-[url('/assets/bg_header.jpg')] bg-top-left bg-fixed bg-cover h-screen"
+    >
+      <div class="flex flex-row justify-between">
+        <div class="flex flex-row pl-8">
+          <img
+            src="./assets/your_logo.png"
+            alt="Le logo du site"
+            class="m-8 h-12 mx-0 md:h-32"
+          />
+          <h1 class="text-3xl roboto font-light pt-10 md:hidden">LOGO</h1>
+          <!-- Responsive -->
+          <h1 class="font-light roboto hidden md:flex text-7xl pt-16">LOGO</h1>
+        </div>
+
+        <img src="./icones/menu.png" alt="Menu burger" class="w-12 h-12 m-8" />
+      </div>
+      <!-- l'écriture du dessus de bg -->
+      <section class="flex flex-col gap-8 text-center p-12 py-12">
+        <div class="text-4xl text-white rokkitt">
+          <h2>
+            In the hall of the
+            <strong class="text-6xl">Mountain King</strong>
+          </h2>
+        </div>
+        <div class="flex flex-col gap-5">
+          <p class="text-2xl/12 font-thin text-white">
+            This is a simple hero unit, a simple jumbotron-style component for
+            calling extra attention to featured content or information.
+          </p>
+
+          <nav
+            class="flex flex-col items-center text-white font-light md:flex-row md:gap-2 justify-center"
+          >
+            <button class="text-2xl bg-blue-300 py-3 px-4">Learn more</button>
+            <button class="text-2xl bg-pink-500 p-3">Download</button>
+          </nav>
+        </div>
+      </section>
+    </header>
+
+    <!-- explication du site -->
+    <main>
+      <section class="flex flex-col gap-8 text-gray-700 px-4 py-24 text-center">
+        <img
+          src="./icones/pencil-4-svgrepo-com.svg"
+          alt="Crayon"
+          class="h-20"
+        />
+        <h2 class="text-3xl rokkitt h-8">Consecteur Risus</h2>
+        <p class="text-xl/8 font-light roboto">
+          Cras justo odio, dapibus ac facilisis in, egestas eget quam.Donec id
+          elit non mi porta gravida at eget metus. Nullam id dolor id nibh
+          ultricies vehicula ut id elit.
+        </p>
+
+        <img src="./icones/camera-svgrepo-com.svg" alt="Camera" class="h-20" />
+        <h2 class="text-3xl rokkitt h-8">Ultricies Aenean</h2>
+        <p class="text-xl/8 font-light roboto">
+          Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer
+          posuere erat a ante venenatis dapibus posuere velit aliquet. Donec
+          ullamcoprper nulla non metus auctor fringilla.
+        </p>
+
+        <img
+          src="./icones/bookmark-svgrepo-com.svg"
+          alt="Marque page"
+          class="h-20"
+        />
+        <h2 class="text-3xl rokkitt h-8">Cras Sollicitudin</h2>
+        <p class="text-xl/8 font-light roboto">
+          Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam.
+          Pallentesque ornare sem lacinia quam venenatis vestibulum. Maecenas
+          faucibus mollis interdum.
+        </p>
+      </section>
+
+      <section
+        class="text-white items-start bg-[url('/assets/bg_nuage.jpg')] bg-cover bg-right px-4"
+      >
+        <div class="bg-sky-300/60 bg-cover px-8 py-20">
+          <div class="flex flex-col gap-8">
+            <h1 class="text-4xl rokkitt">Ligula Mattis Ornare Ultricies</h1>
+            <h2 class="text-3xl rokkitt">
+              Pellentsaque Cursus Amet Parturient Etiam
+            </h2>
+            <p class="text-xl/8 font-light roboto">
+              Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
+              id elit non mi porta gravida et eget metus. Nullam id dolor id
+              nibh ultricies vehicula ut id elit.
+            </p>
+            <div
+              class="flex flex-col gap-8 font-light rokkitt items-center md:gap-5"
+            >
+              <div
+                class="flex flex-col gap-12 text-center border py-10 w-44 md:gap-8 md:py-8 md:w-92"
+              >
+                <h3 class="text-3xl md:text-2xl">Ultricies</h3>
+                <p class="lining-nums text-5xl md:text-4xl">23,578</p>
+              </div>
+              <div
+                class="flex flex-col gap-12 text-center border py-10 w-44 md:gap-5 md:py-8 md:w-92"
+              >
+                <h3 class="text-3xl md:text-2xl">Fermentum</h3>
+                <p class="lining-nums text-5xl md:text-4xl">12,702</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-700 py-20 px-4">
+        <div class="flex flex-col gap-8">
+          <h2 class="text-4xl rokkitt items-start">
+            Lorem ipsum dolor sit amet, consecteur adipiscing elit.
+          </h2>
+          <p class="text-xl/8 font-light roboto">
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+            eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius
+            blandit sit amet non magna. Donec sed odio dui. Curabitur blandit
+            tempus porttitor. Nullam id dolor id nibh ultricies vehicula et id
+            elit. Etiam porta sem malesuada magna mollis euismod.
+          </p>
+          <p class="break-normal text-xl/8 font-light roboto">
+            Donec id elit non mi porta gravida at eget metus. Donec id elit non
+            mi porta gravida at eget metus. Integer posuere erat a ante
+            venenatis dapibus posuere erat a ante venenatis dapibus posuere
+            velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor
+            mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla
+            vitae elit libero, a paretra augue.
+          </p>
+        </div>
+
+        <div class="pt-5 text-center">
+          <a
+            href="#"
+            class="flex justify-center items-center flex-row text-xl bg-pink-500 text-white w-42"
+          >
+            Take a Look
+            <svg
+              width="64px"
+              height="64px"
+              viewBox="-15.84 -15.84 55.68 55.68"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-12"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                ></circle>
+                <path
+                  d="M8 12L16 12M16 12L13 15M16 12L13 9"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <img
+            src="./assets/velo-femme.jpeg"
+            alt="Une femme en vélo"
+            class=""
+          />
+        </div>
+      </section>
+
+      <section
+        class="bg-[url('/assets/bg_appareil_photo.jpg')] bg-cover bg-bottom px-4"
+      >
+        <div
+          class="bg-sky-300/60 bg-cover text-xl text-white italic roboto px-4 py-12"
+        >
+          <p class="font-thin">
+            Donec sed odio dui. Integer posuere erat a ante venenatis dapibus
+            posuere velit aliquet. Praesent commodo cursus magna.Vel scelerisque
+            nisl consectetur et.
+          </p>
+          <p class="text-xl/12 font-thin py-8">
+            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+            vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. Aenean eu leo quam.
+            Pallentesque ornare sem lacinia quam venenatis vestibulum. Cras
+            justo odio, dapibus ac facilisis in, egestas eget quam. Praesent
+            commodo cursus magna, vel scelerisque nisl consectetur et.
+          </p>
+          <h3 class="text-3xl not-italic font-thin rokkitt">
+            - Fermentum Dapibus
+          </h3>
+          <p class="text-xl/12 not-italic font-light roboto">
+            Nibh Etiam Risus Bibendum Nullam id dolor id nibh ultricies ut id
+            elit.
+          </p>
+        </div>
+      </section>
+      <!-- La mosaïque -->
+      <section
+        class="flex flex-col gap-4 bg-gray-300 py-20 md:flex-row md:px-5"
+      >
+        <div class="flex flex-col gap-4 md:w-1/3 xl:w-2/3">
+          <img src="./assets/haut-parleur.jpeg" alt="Enceinte" />
+          <img
+            src="./assets/montagne.jpeg"
+            alt="Volcan"
+            class="sm:flex md:hidden"
+          />
+          <div class="flex flex-col gap-4 xl:flex-row">
+            <img
+              src="./assets/800.jpeg"
+              alt="pont golden gate bridge"
+              class="md:hidden xl:flex xl:w-1/2"
+            />
+            <div class="flex flex-col gap-4 xl:w-1/2">
+              <img
+                src="./assets/sunrise.jpeg"
+                alt="Un homme en 1er plan et le 2èm plan c'est le couché de soleil"
+              />
+              <img
+                src="./assets/Vernis-appareiltof.jpeg"
+                alt="Une femme tenant une appareil photo"
+              />
+            </div>
+          </div>
+          <img
+            src="./assets/crash-avion.jpeg"
+            alt="Avion en crash"
+            class="sm:flex md:hidden"
+          />
+          <img src="./assets/Motel.jpeg" alt="Paneau en fer de Motel" />
+        </div>
+
+        <div class="hidden md:flex md:w-2/3 md:gap-4 xl:w-1/3 xl:flex-col">
+          <img src="./assets/montagne.jpeg" alt="Volcan" class="md:w-1/2 xl:w-full" />
+          <div class="md:w-1/2 md:flex md:flex-col md:gap-4 xl:w-full">
+            <img
+              src="./assets/800.jpeg"
+              alt="pont golden gate bridge"
+              class="xl:hidden"
+            />
+            <img
+              src="./assets/crash-avion.jpeg"
+              alt="Avion en crash"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Les campagnes -->
+      <section class="flex flex-col px-4 py-20">
+        <img src="./assets/logo-sample-01.jpg" alt="Logo of advantage" />
+        <img src="./assets/logo-sample-02.jpg" alt="Logo of company name" />
+        <img src="./assets/logo-sample-03.png" alt="Logo of sample music" />
+        <img src="./assets/logo-sample-04.jpg" alt="Logo parallon" />
+        <img src="./assets/logo-sample-05.jpg" alt="Logo company name" />
+        <img
+          src="./assets/logo-sample-06.png"
+          alt="Logo squarespace"
+          class="w-84"
+        />
+      </section>
+
+      <section
+        class="text-white bg-[url('/assets/bg_newsletter.jpg')] bg-cover"
+      >
+        <div
+          class="bg-gray-900/40 backdrop-blur-2xl flex flex-col gap-12 px-6 py-20"
+        >
+          <h2 class="text-5xl rokkitt">
+            Maecenas se ddiam eget risus varius blandit sit amet non magna.
+          </h2>
+          <p class="text-xl/12 font-thin">
+            Aenean eeu leo quam. Pallentesque ornare sem lacinia quam venenatis
+            vestibulum. Cras mattis consectetur purus sit amet fermentum.
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+          </p>
+          <form action="" method="get" class="flex flex-col gap-8">
+            <label for="email" class="hidden">Email</label>
+            <input
+              id="email"
+              name="email"
+              class="placeholder-gray-500 border bg-white p-2 text-xl"
+              placeholder="Your Email Here..."
+            />
+
+            <button
+              type="submit"
+              class="text-xl font-thin bg-pink-600 p-2 w-1/2"
+            >
+              Submit Newsletter
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flex flex-col gap-8 px-6 py-12 bg-gray-green text-white">
+      <h2 class="text-5xl rokkitt">Your Logo</h2>
+
+      <div class="flex flex-col">
+        <p class="text-xl/8 roboto font-light">
+          © <span class="rokkitt">2016</span> Your Company. Designed and
+          Developed by
+          <span class="text-green">The Maitre jet d'ail</span>
+        </p>
+
+        <nav class="flex flex-row gap-4 pt-20 justify-end">
+          <a href="#">
+            <img
+              src="./icones/facebook-svgrepo-com.svg"
+              alt="Logo de facebook"
+              class="w-8"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="./icones/twitter-svgrepo-com.svg"
+              alt="Ancien logo de twitter"
+              class="w-7"
+            />
+          </a>
+          <a href="#"
+            ><img
+              src="./icones/tumblr-svgrepo-com.svg"
+              alt="Tumblr logo"
+              class="w-7"
+          /></a>
+          <a href="#"
+            ><img
+              src="./icones/github-svgrepo-com.svg"
+              alt="Logo de GitHub"
+              class="w-7"
+          /></a>
+          <a href="#"
+            ><img
+              src="./icones/dribbble-svgrepo-com.svg"
+              alt="Logo d'un site internet qui regroupe des travaux de designer: dribbble"
+              class="w-7"
+          /></a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

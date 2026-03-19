@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.rokkitt {
+  font-family: "Rokkitt", serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-gray-green {
+  background-color: #24323b;
+}
+
+.text-green {
+  color: #2ca9bc;
+}
