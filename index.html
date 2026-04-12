@@ -22,7 +22,7 @@
 
   <body>
     <!-- l'entête -->
-    <header class="fixed top-0 left-0 right-0 flex flex-row justify-between ">
+    <header class="fixed top-0 left-0 right-0 flex flex-row justify-between">
       <div class="flex flex-row pl-8">
         <img
           src="./assets/your_logo.png"
@@ -38,16 +38,36 @@
       </div>
 
       <!-- menu burger -->
-      <div
-        id="fond-sombre"
-        class="fixed top-0 right-0 left-0 bottom-0 bg-black/60 hidden"
-      ></div>
-      
-      <div
-        class="fixed top-0 left-0 bottom-0 bg-gray-800 text-white flex-col items-center text-xs gap-8 w-40 hidden"
-        id="fenetre"
-      >
-        <a href="#home" class="mt-12">Home</a>
+      <div class="lg:hidden">
+        <div
+          id="fond-sombre"
+          class="fixed top-0 right-0 left-0 bottom-0 bg-black/60 hidden"
+        ></div>
+
+        <div
+          class="fixed top-0 left-0 bottom-0 bg-gray-800 text-white flex-col items-center text-xs gap-8 w-40 hidden"
+          id="fenetre"
+        >
+          <a href="#home" class="mt-12">Home</a>
+          <a href="#features">Features</a>
+          <a href="#about">About me</a>
+          <a href="#blog">My Blog</a>
+          <a href="#history">My History</a>
+          <a href="#photos">Look my photos</a>
+          <a href="#touch">Get in Touch!</a>
+          <a href="#download">Download</a>
+        </div>
+        <img
+          src="./icones/menu.png"
+          alt="Menu burger"
+          id="menub"
+          class="w-9 h-9 m-9 md:w-12 md:h-12 md:m-12"
+        />
+      </div>
+
+      <!-- MEENU DESKTOP -->
+      <div class="hidden lg:flex lg:flex-row gap-6 p-16">
+        <a href="#home">Home</a>
         <a href="#features">Features</a>
         <a href="#about">About me</a>
         <a href="#blog">My Blog</a>
@@ -56,12 +76,6 @@
         <a href="#touch">Get in Touch!</a>
         <a href="#download">Download</a>
       </div>
-      <img
-        src="./icones/menu.png"
-        alt="Menu burger"
-        id="menub"
-        class="w-9 h-9 m-9 md:w-12 md:h-12 md:m-12"
-      />
     </header>
     <main>
       <section
@@ -69,26 +83,28 @@
         class="flex flex-col justify-center items-center bg-[url('/assets/bg_header.jpg')] bg-cover h-screen lg:px-32"
       >
         <!-- l'écriture du dessus de bg -->
-        <div class="flex flex-col gap-8 text-center p-12 py-12 lg:px-3">
-          <div class="text-4xl text-white rokkitt">
+        <div class="flex flex-col gap-5 text-center pt-8 px-7 lg:px-3">
+          <div class="text-3xl text-white rokkitt">
             <h2>
               In the hall of the
-              <strong class="text-4xl md:text-6xl">Mountain King</strong>
+              <strong class="text-3xl md:text-6xl">Mountain King</strong>
             </h2>
           </div>
-          <div class="flex flex-col gap-5">
-            <p class="text-xl/12 font-thin text-white md:text-2xl/12">
-              This is a simple hero unit, a simple jumbotron-style component for
-              calling extra attention to featured content or information.
-            </p>
+          <!-- <div class="flex flex-col"> -->
+          <p class="text-xl font-thin text-white md:text-2xl/12">
+            This is a simple hero unit, a simple jumbotron-style component for
+            calling extra attention to featured content or information.
+          </p>
 
-            <nav
-              class="flex flex-col items-center text-white font-light md:flex-row md:gap-2 justify-center"
-            >
-              <button class="text-2xl bg-blue-300 py-3 px-4">Learn more</button>
-              <button id="loading" class="text-2xl bg-pink-500 p-3">Download</button>
-            </nav>
-          </div>
+          <nav
+            class="flex flex-col items-center gap-2 text-white font-light md:flex-row md:gap-2 justify-center"
+          >
+            <button class="text-2xl bg-blue-300 py-3 px-4">Learn more</button>
+            <button id="download" class="text-2xl bg-pink-500 p-3">
+              Download
+            </button>
+          </nav>
+          <!-- </div> -->
         </div>
       </section>
 
@@ -342,7 +358,6 @@
 
       <!-- Les campagnes -->
       <section
-        id="touch"
         class="py-12 md:px-12 md:flex md:flex-wrap md:items-center lg:flex-row lg:justify-center lg:items-center lg:px-32"
       >
         <img
@@ -383,7 +398,7 @@
       </section>
 
       <section
-        id="download"
+        id="touch"
         class="text-white bg-[url('/assets/bg_newsletter.jpg')] bg-cover"
       >
         <div
@@ -419,7 +434,6 @@
     </main>
 
     <footer
-    
       class="flex flex-col gap-8 px-6 py-12 bg-gray-green text-white lg:px-32"
     >
       <h2 class="text-5xl rokkitt">Your Logo</h2>
